@@ -1,4 +1,4 @@
-const API_URL = 'http://localhost:3000/api';
+const API_URL = 'https://basis-nose-genealogy-segments.trycloudflare.com/api';
 
 // Contoh fungsi pendaftaran user baru
 async function registerUser(username, email, password) {
