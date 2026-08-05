@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tagihan Saya - VarzHost</title>
+    <link rel="stylesheet" href="../assets/css/main.css">
+    <script>
+        if (!localStorage.getItem('varz_token')) {
+            window.location.href = '/login';
+        }
+    </script>
+</head>
+<body>
+
+<nav>
+    <a href="/dashboard">Dashboard</a>
+    <a href="/dashboard/invoices.html">Tagihan Saya</a>
+    <a href="/login" id="btn-logout" style="color: #ef4444;">Logout</a>
+</nav>
+
+<div class="container">
+    <h2>Daftar Invoice / Tagihan</h2>
+    <p style="color: #94a3b8; margin-bottom: 20px;">Silakan selesaikan pembayaran untuk mengaktifkan paket hosting Anda.</p>
+
+    <div style="overflow-x: auto; background-color: #1e293b; padding: 20px; border-radius: 8px;">
+        <table style="width: 100%; border-collapse: collapse; text-align: left; color: white;">
+            <thead>
+                <tr style="border-bottom: 2px solid #334155; color: #38bdf8;">
+                    <th style="padding: 12px;">ID Invoice</th>
+                    <th style="padding: 12px;">Paket</th>
+                    <th style="padding: 12px;">Domain</th>
+                    <th style="padding: 12px;">Total</th>
+                    <th style="padding: 12px;">Status</th>
+                    <th style="padding: 12px;">Aksi</th>
+                </tr>
+            </thead>
+            <tbody id="invoice-table-body">
+                </tbody>
+        </table>
+    </div>
+</div>
+
+<script src="../assets/js/dashboard.js"></script>
+</body>
+</html>
+
