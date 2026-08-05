@@ -1,4 +1,4 @@
-const API_URL = 'https://smoke-sells-spyware-include.trycloudflare.com/api';
+const API_URL = 'https://chairs-continued-deserve-sunday.trycloudflare.com/api';
 
 // Contoh fungsi pendaftaran user baru
 async function registerUser(username, email, password) {
