@@ -12,7 +12,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
             try {
                 // Mengirim data ke backend API Express yang telah kita buat
-                const response = await fetch('https://full-sheffield-treasury-hearts.trycloudflare.com/api/auth/register', {
+                const response = await fetch('https://expects-managing-consequence-housewives.trycloudflare.com/api/auth/register', {
                     method: 'POST',
                     headers: {
                         'Content-Type': 'application/json'
@@ -49,7 +49,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
             try {
                 // Fetch menembak ke API backend yang kita buat di atas
-                const response = await fetch('https://full-sheffield-treasury-hearts.trycloudflare.com/api/auth/login', {
+                const response = await fetch('https://expects-managing-consequence-housewives.trycloudflare.com/api/auth/login', {
                     method: 'POST',
                     headers: { 'Content-Type': 'application/json' },
                     body: JSON.stringify({ email, password })
