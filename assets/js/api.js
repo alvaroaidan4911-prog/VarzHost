@@ -1,4 +1,4 @@
-const API_URL = 'https://basis-nose-genealogy-segments.trycloudflare.com/api';
+const API_URL = 'https://full-sheffield-treasury-hearts.trycloudflare.com/api';
 
 // Contoh fungsi pendaftaran user baru
 async function registerUser(username, email, password) {

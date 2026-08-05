@@ -1,7 +1,7 @@
 // Fungsi untuk mengambil data paket dari Backend Node.js
 async function loadHostingPlans() {
     try {
-        const response = await fetch('https://basis-nose-genealogy-segments.trycloudflare.com/api/hosting/plans');
+        const response = await fetch('https://full-sheffield-treasury-hearts.trycloudflare.com/api/hosting/plans');
         const plans = await response.json();
 
         // Cari elemen container tempat kartu pricing diletakkan
@@ -54,7 +54,7 @@ async function orderPlan(planId) {
 
     try {
         // 3. Kirim request checkout ke backend
-        const response = await fetch('https://basis-nose-genealogy-segments.trycloudflare.com/api/payments/checkout', {
+        const response = await fetch('https://full-sheffield-treasury-hearts.trycloudflare.com/api/payments/checkout', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
