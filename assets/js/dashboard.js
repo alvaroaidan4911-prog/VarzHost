@@ -11,7 +11,7 @@ document.addEventListener('DOMContentLoaded', async () => {
     if (statActive || statUnpaid || statTotal) {
         async function loadDashboardStats() {
             try {
-                const response = await fetch('https://chairs-continued-deserve-sunday.trycloudflare.com/api/payments/stats', {
+                const response = await fetch('https://keeping-north-proudly-turner.trycloudflare.com/api/payments/stats', {
                     headers: { 'Authorization': `Bearer ${token}` }
                 });
                 const stats = await response.json();
@@ -36,7 +36,7 @@ document.addEventListener('DOMContentLoaded', async () => {
     if (tableBody) {
         async function loadInvoices() {
             try {
-                const response = await fetch('https://chairs-continued-deserve-sunday.trycloudflare.com/api/payments/invoices', {
+                const response = await fetch('https://keeping-north-proudly-turner.trycloudflare.com/api/payments/invoices', {
                     headers: { 'Authorization': `Bearer ${token}` }
                 });
                 const invoices = await response.json();
@@ -75,7 +75,7 @@ document.addEventListener('DOMContentLoaded', async () => {
             if (!confirm('Apakah kamu ingin mensimulasikan pembayaran lunas untuk invoice ini?')) return;
 
             try {
-                const response = await fetch(`https://chairs-continued-deserve-sunday.trycloudflare.com/api/payments/pay/${invoiceId}`, {
+                const response = await fetch(`https://keeping-north-proudly-turner.trycloudflare.com/api/payments/pay/${invoiceId}`, {
                     method: 'POST',
                     headers: { 'Authorization': `Bearer ${token}` }
                 });
@@ -99,7 +99,7 @@ document.addEventListener('DOMContentLoaded', async () => {
     if (servicesContainer) {
         async function loadActiveServices() {
             try {
-                const response = await fetch('https://chairs-continued-deserve-sunday.trycloudflare.com/api/payments/services', {
+                const response = await fetch('https://keeping-north-proudly-turner.trycloudflare.com/api/payments/services', {
                     headers: { 'Authorization': `Bearer ${token}` }
                 });
                 
